@@ -15,7 +15,7 @@
     "gatsby-link": "2.2.22",
     "gatsby-plugin-manifest": "2.2.26",
     "gatsby-plugin-react-helmet": "3.1.13",
-    "gatsby-plugin-sharp": "^2.2.36",
+    "gatsby-plugin-sharp": "2.2.36",
     "gatsby-plugin-stylus-resources": "1.0.25",
     "gatsby-plugin-typescript": "2.1.15",
     "gatsby-remark-images": "3.1.28",
@@ -45,6 +45,7 @@
     "codecov": "3.6.1",
     "jest": "24.9.0",
     "prettier": "1.18.2",
-    "ts-jest": "24.1.0"
+    "ts-jest": "24.1.0",
+    "typescript": "3.6.4"
   }
 }

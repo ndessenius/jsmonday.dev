@@ -1,7 +1,7 @@
 {
   "name": "jsmonday-frontend",
   "description": "JSMonday Website Frontend",
-  "version": "1.0.0",
+  "version": "1.0.0-dev",
   "author": "Michele Riva <ciao@micheleriva.it>",
   "maintainers": [
     {

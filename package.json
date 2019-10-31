@@ -1,22 +1,17 @@
 {
-  "name": "gatsby-starter-typescript",
-  "description": "Gatsby TypeScript starter",
+  "name": "jsmonday-frontend",
+  "description": "JSMonday Website Frontend",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Michele Riva <ciao@micheleriva.it>",
   "dependencies": {
-    "@types/node": "^8.0.7",
-    "@types/react": "15.0.21",
-    "@types/react-dom": "0.14.23",
     "gatsby": "^1.9.119",
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-typescript": "^1.4.10"
+    "gatsby-plugin-typescript": "^1.4.10",
+    "ramda": "^0.26.1",
+    "sanctuary": "^2.0.0"
   },
-  "keywords": [
-    "gatsby, typescript"
-  ],
-  "license": "MIT",
-  "main": "n/a",
+  "license": "GNU AGPLv3",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -24,10 +19,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@types/ramda": "^0.26.33",
+    "@types/sanctuary": "^0.14.2",
+    "@types/node": "^8.0.7",
+    "@types/react": "15.0.21",
+    "@types/react-dom": "0.14.23",
     "prettier": "^1.8.2"
-  },
-  "contributors": [
-    "fabien0102 <fabien0102@gmail.com>",
-    "Hays Clark <hays.clark@gmail.com>"
-  ]
+  }
 }

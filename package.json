@@ -3,27 +3,38 @@
   "description": "JSMonday Website Frontend",
   "version": "1.0.0",
   "author": "Michele Riva <ciao@micheleriva.it>",
+  "maintainers": [
+    {
+      "email": "ciao@micheleriva.it",
+      "name": "Michele Riva",
+      "url": "https://github.com/micheleriva"
+    }
+  ],
   "dependencies": {
-    "gatsby": "^1.9.119",
-    "gatsby-link": "^1.6.28",
-    "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-typescript": "^1.4.10",
-    "ramda": "^0.26.1",
-    "sanctuary": "^2.0.0"
+    "gatsby": "1.9.119",
+    "gatsby-link": "1.6.28",
+    "gatsby-plugin-react-helmet": "1.0.8",
+    "gatsby-plugin-typescript": "1.4.10",
+    "ramda": "0.26.1",
+    "sanctuary": "2.0.0"
   },
   "license": "GNU AGPLv3",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --parser typescript --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.ts*\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "devDependencies": {
-    "@types/ramda": "^0.26.33",
-    "@types/sanctuary": "^0.14.2",
-    "@types/node": "^8.0.7",
+    "@types/jest": "24.0.21",
+    "@types/node": "8.0.7",
+    "@types/ramda": "0.26.33",
     "@types/react": "15.0.21",
     "@types/react-dom": "0.14.23",
-    "prettier": "^1.8.2"
+    "@types/sanctuary": "0.14.2",
+    "codecov": "^3.6.1",
+    "jest": "24.9.0",
+    "prettier": "1.8.2",
+    "ts-jest": "24.1.0"
   }
 }

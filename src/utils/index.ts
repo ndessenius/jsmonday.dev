@@ -3,13 +3,13 @@ import * as S from "sanctuary";
 import { Either } from "./types";
 
 /**
- * @function shuffle
+ * @function shuffleArray
  * @param {any[]} arr
  * @returns {any[]}
- * @sign shuffle :: [a] -> [a]
+ * @sign shuffleArray :: [a] -> [a]
  */
 
-export const shuffle = (arr: any[]) => arr.sort(() => Math.random() - 0.5);
+export const shuffleArray = (arr: any[]) => arr.sort(() => Math.random() - 0.5);
 
 /**
  * @function getRandomBetween
@@ -28,13 +28,13 @@ export const getRandomBetween = R.curry((min: number = 0, max: number, float: bo
 /**
  * @function pickRandomElements
  * @argument {any[]} arr
- * @argument {number} number
+ * @argument {number} howMany
  * @returns {Either<Error, number>}
  * @sign pickRandomElements :: [a] -> Int -> Either Error number
  */
 
-export const pickRandomElements = R.curry((arr: any[], number: number): Either<Error, number> => {
-  return number > R.length(arr)
-    ? S.Left(Error(`Cannot get ${number} elements out of an array with ${R.length(arr)} elements`))
-    : S.Right(R.take(number, shuffle(arr)));
+export const pickRandomElements = R.curry((arr: any[], howMany: number): Either<Error, number> => {
+  return howMany > R.length(arr)
+    ? S.Left(Error(`Cannot get ${howMany} elements out of an array with ${R.length(arr)} elements`))
+    : S.Right(R.take(howMany, shuffleArray(arr)));
 });

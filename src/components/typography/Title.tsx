@@ -13,17 +13,16 @@ function shouldHighlight(word: string): boolean {
 }
 
 function makeHighlight(text: string) {
-  return text
-    .split(" ")
-    .map(word => (
-      <span
-        className={
-          shouldHighlight(word) ? `highlight ${randomHighlightColor()}` : ""
-        }
-      >
-        {word}&nbsp;
-      </span>
-    ));
+  return text.split(" ").map(word => (
+    <span
+      key={word}
+      className={
+        shouldHighlight(word) ? `highlight ${randomHighlightColor()}` : ""
+      }
+    >
+      {word}&nbsp;
+    </span>
+  ));
 }
 
 interface TitleProps {

@@ -1,14 +1,19 @@
 .jsm-menu
+  position              fixed
   display               grid
   grid-template-columns repeat(4, 1fr)
   font-family           font-mono
+  width                 100%
   max-width             view-width
-  padding               space-m
+  padding               space-xl
+  margin                auto
+  center()
 
   .jsm-menu-item
     color      white
     text-align center
     cursor     pointer
+    font-size  font-size-l
 
     &.active
       color color-magenta

@@ -36,7 +36,7 @@ const programmingTerms: RegExp[] = [
   /^package/i,
   /^try/i,
   /^continue/i,
-  /^function/i,
+  /^functions?/i,
   /^private/i,
   /^typeof/i,
   /^debugger/i,
@@ -68,7 +68,10 @@ const programmingTerms: RegExp[] = [
   /^angular/i,
   /^haskell/i,
   /^types?/i,
-  /^typescript/i
+  /^typescript/i,
+  /^aws/i,
+  /^firebase/i,
+  /^google\scloud/i
 ];
 
 export default programmingTerms;

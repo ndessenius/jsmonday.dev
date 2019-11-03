@@ -5,10 +5,38 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/`
+      }
+    },
+    {
+      resolve: "gatsby-source-strapi",
+      options: {
+        apiURL: "https://api.jsmonday.dev",
+        contentTypes: [
+          "article",
+          "author",
+          "event",
+          "language",
+          "patron",
+          "snippet",
+          "tag"
+        ],
+        queryLimit: 1000
+      }
+    },
     {
       resolve: `gatsby-plugin-stylus-resources`,
       options: {
-        resources: [`./src/styles/main.styl`, `./src/styles/vars.styl`]
+        resources: [
+          `./src/styles/main.styl`,
+          `./src/styles/vars.styl`,
+          `./src/styles/mixin.styl`
+        ]
       }
     },
     {

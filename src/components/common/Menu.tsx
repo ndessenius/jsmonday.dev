@@ -5,7 +5,7 @@ import "./Menu.styl";
 const menuItems = [
   {
     link: "/",
-    name: "home"
+    name: "jsmonday.dev"
   },
   {
     link: "/articles",
@@ -21,14 +21,14 @@ const menuItems = [
   }
 ];
 
-export default function Menu() {
-  return (
-    <div className="jsm-menu">
-      {menuItems.map(item => (
-        <Link to={item.link} className="jsm-menu-item" key={item.name}>
-          /{item.name}/
-        </Link>
-      ))}
-    </div>
-  );
-}
+const Menu = () => (
+  <div className="jsm-menu">
+    {menuItems.map(item => (
+      <Link to={item.link} className="jsm-menu-item" key={item.name}>
+        /{item.name}/
+      </Link>
+    ))}
+  </div>
+);
+
+export default Menu;
